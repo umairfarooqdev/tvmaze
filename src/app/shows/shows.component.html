@@ -1,0 +1,12 @@
+<h1>Shows</h1>
+
+<ul>
+  <li *ngFor="let show of shows$">
+    <a routerLInk="/details/{{show.id}}"> {{show.name}}</a>
+
+    <ul>
+      <li>{{show.image.medium}}</li>
+      <li>{{show.summary}}</li>
+    </ul>
+  </li>
+</ul>
